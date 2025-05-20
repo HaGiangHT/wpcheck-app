@@ -51,7 +51,7 @@ export default function StockCard({data, isFavorite, toggleFavorite, searchState
                 navigate(`/details/${data.wkn}?${params.toString()}`, {
                     state: {
                         ...searchState,
-                        from: window.location.pathname,
+                        from: window.location.hash.replace('#',''),
                     }
                 });
             }}

@@ -50,7 +50,9 @@ export default function StockDetails({data, isFavorite, toggleFavorite}: StockDe
     })();
 
 
-    const backTarget = from === '/favorites'
+    const isFromFavorites = from?.startsWith('/favorites');
+
+    const backTarget = isFromFavorites
         ? '/favorites'
         : `/search?${searchParams.toString()}`;
 
