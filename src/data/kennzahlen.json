@@ -1,0 +1,124 @@
+[
+  {
+    "wkn": "123456",
+    "dividendenRendite": "2.5%",
+    "letzteDividende": "1.20 €",
+    "kgv": 18.4,
+    "gewinnJeAktie": "8.27 €",
+    "branche": "Technologie",
+    "sitz": "Deutschland"
+  },
+  {
+    "wkn": "654321",
+    "faelligkeitsdatum": "2030-05-01",
+    "laufzeit": "5 Jahre",
+    "kuponzins": "1.75%",
+    "waehrung": "EUR"
+  },
+  {
+    "wkn": "111111",
+    "fondvolumen": "1.2 Mrd. €",
+    "gebuehren": "1.2%",
+    "ausschuettungsart": "thesaurierend",
+    "fondart": "Mischfonds"
+  },
+  {
+    "wkn": "222222",
+    "index": "MSCI Energy",
+    "gebuehren": "0.25%",
+    "fondvolumen": "750 Mio. €",
+    "ausschuettungsart": "ausschüttend",
+    "listingdatum": "2018-04-15",
+    "dividende": "0.85 €",
+    "waehrung": "EUR"
+  },
+  {
+    "wkn": "333333",
+    "dividendenRendite": "1.8%",
+    "letzteDividende": "0.75 €",
+    "kgv": 22.1,
+    "gewinnJeAktie": "4.47 €",
+    "branche": "Technologie",
+    "sitz": "Deutschland"
+  },
+  {
+    "wkn": "444444",
+    "faelligkeitsdatum": "2035-01-01",
+    "laufzeit": "10 Jahre",
+    "kuponzins": "0.5%",
+    "waehrung": "EUR"
+  },
+  {
+    "wkn": "555555",
+    "fondvolumen": "2.3 Mrd. €",
+    "gebuehren": "1.8%",
+    "ausschuettungsart": "ausschüttend",
+    "fondart": "Immobilienfonds"
+  },
+  {
+    "wkn": "666666",
+    "index": "Stoxx Europe 600 Consumer Goods",
+    "gebuehren": "0.3%",
+    "fondvolumen": "620 Mio. €",
+    "ausschuettungsart": "thesaurierend",
+    "listingdatum": "2017-09-30",
+    "dividende": "0.65 €",
+    "waehrung": "EUR"
+  },
+  {
+    "wkn": "777777",
+    "dividendenRendite": "3.2%",
+    "letzteDividende": "2.40 €",
+    "kgv": 14.7,
+    "gewinnJeAktie": "10.55 €",
+    "branche": "Technologie",
+    "sitz": "Deutschland"
+  },
+  {
+    "wkn": "888888",
+    "faelligkeitsdatum": "2028-03-31",
+    "laufzeit": "4 Jahre",
+    "kuponzins": "2.25%",
+    "waehrung": "USD"
+  },
+  {
+    "wkn": "999999",
+    "fondvolumen": "980 Mio. €",
+    "gebuehren": "1.0%",
+    "ausschuettungsart": "thesaurierend",
+    "fondart": "Rentenfonds"
+  },
+  {
+    "wkn": "101010",
+    "index": "NASDAQ 100",
+    "gebuehren": "0.35%",
+    "fondvolumen": "1.6 Mrd. €",
+    "ausschuettungsart": "ausschüttend",
+    "listingdatum": "2019-01-20",
+    "dividende": "1.10 €",
+    "waehrung": "EUR"
+  },
+  {
+    "wkn": "202020",
+    "dividendenRendite": "2.0%",
+    "letzteDividende": "1.00 €",
+    "kgv": 16.3,
+    "gewinnJeAktie": "5.33 €",
+    "branche": "Technologie",
+    "sitz": "Deutschland"
+  },
+  {
+    "wkn": "303030",
+    "faelligkeitsdatum": "2031-12-31",
+    "laufzeit": "6 Jahre",
+    "kuponzins": "3.75%",
+    "waehrung": "EUR"
+  },
+  {
+    "wkn": "404040",
+    "fondvolumen": "1.8 Mrd. €",
+    "gebuehren": "1.5%",
+    "ausschuettungsart": "ausschüttend",
+    "fondart": "Aktienfonds"
+  }
+]
