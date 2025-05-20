@@ -68,26 +68,38 @@ export default function StockDetails({data, isFavorite, toggleFavorite}: StockDe
     } = berechneVeränderungen(filteredData, letztesDatum);
 
 
+    const kursDatenLoader = import.meta.glob('../data/kursverlauf*.json');
     useEffect(() => {
-        setLoading(true);
-        setError(null);
+        async function fetchKursdaten() {
+            setLoading(true);
+            setError(null);
 
-        // Kleine Zeiträume (1T, 1W) laden feinere stündliche Daten
-        const useFineData = zeitraum === '1T' || zeitraum === '1W';
-        const path = useFineData
-            ? `../data/kursverlauf_fine_${data.wkn}.json`
-            : `../data/kursverlauf_${data.wkn}.json`;
+            const useFineData = zeitraum === '1T' || zeitraum === '1W';
+            const fileName = useFineData
+                ? `../data/kursverlauf_fine_${data.wkn}.json`
+                : `../data/kursverlauf_${data.wkn}.json`;
 
-        import(path)
-            .then((module) => {
-                setKursdaten(module.default);
-                setLoading(false);
-            })
-            .catch(() => {
+            const loadKursdaten = kursDatenLoader[fileName];
+            if (!loadKursdaten) {
                 setError('Kursverlauf nicht verfügbar');
                 setLoading(false);
-            });
+                return;
+            }
+
+            try {
+                const module = await loadKursdaten();
+                const typedModule = module as { default: KursDatum[] };
+                setKursdaten(typedModule.default);
+            } catch {
+                setError('Kursverlauf nicht verfügbar');
+            } finally {
+                setLoading(false);
+            }
+        }
+
+        fetchKursdaten();
     }, [data.wkn, zeitraum]);
+
 
     useEffect(() => {
         if (!kursdaten) return;

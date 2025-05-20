@@ -8,7 +8,7 @@ import schlossImage from '../assets/schloss.png';
 import stocksImage from '../assets/stocks.png';
 import unternehmenImage from '../assets/unternehmensprofil_blau.png';
 import { Link as RouterLink } from 'react-router-dom';
-
+import homepageImg from '../assets/homepage.png'
 
 function Home() {
 
@@ -18,7 +18,7 @@ function Home() {
             <Box
                 sx={{
                     minHeight: '60vh',
-                    backgroundImage: 'url("/src/assets/homepage.png")',
+                    backgroundImage: `url(${homepageImg})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     display: 'flex',
