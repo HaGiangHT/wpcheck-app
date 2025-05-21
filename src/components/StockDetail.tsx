@@ -388,7 +388,7 @@ export default function StockDetails({data, isFavorite, toggleFavorite}: StockDe
                                 ].map((value, index) => {
                                     const color = [
                                         veraenderungGestern,
-
+                                        veraenderungGestern,
                                         veraenderungEineWoche,
                                         veraenderungEinMonat,
                                         veraenderungSechsMonate,
