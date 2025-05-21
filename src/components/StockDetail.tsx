@@ -166,7 +166,7 @@ export default function StockDetails({data, isFavorite, toggleFavorite}: StockDe
             { label: "Branche", value: kennzahlen.branche },
             { label: "Sitz", value: kennzahlen.sitz },
             { label: "Dividendenrendite", value: kennzahlen.dividendenRendite },
-            { label: "letzte Dividende", value: kennzahlen.letzteDividende },
+            { label: "Letzte Dividende", value: kennzahlen.letzteDividende },
             { label: "Gewinn je Aktie", value: kennzahlen.gewinnJeAktie },
         );
     } else if (kennzahlen && data.typ === "ETF") {
@@ -176,7 +176,7 @@ export default function StockDetails({data, isFavorite, toggleFavorite}: StockDe
             { label: "Ausschüttungsart", value: kennzahlen.ausschuettungsart },
             { label: "Dividende", value: kennzahlen.dividende },
             { label: "Listingdatum", value: kennzahlen.listingdatum },
-            { label: "waehrung", value: kennzahlen.waehrung },
+            { label: "Währung", value: kennzahlen.waehrung },
             { label: "Gebühren", value: kennzahlen.gebuehren },
         );
     } else if (kennzahlen && data.typ === "Fonds") {
@@ -191,7 +191,7 @@ export default function StockDetails({data, isFavorite, toggleFavorite}: StockDe
             { label: "Kuponzins", value: kennzahlen.kuponzins },
             { label: "Fälligkeitsdatum", value: kennzahlen.faelligkeitsdatum },
             { label: "Laufzeit", value: kennzahlen.laufzeit },
-            { label: "waehrung", value: kennzahlen.waehrung },
+            { label: "Währung", value: kennzahlen.waehrung },
         );
     }
 
